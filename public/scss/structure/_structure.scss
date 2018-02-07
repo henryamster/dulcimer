@@ -10,3 +10,11 @@ body{
     margin:0;
     padding:0;
 }
+
+a{
+    color:$color__interactive; 
+    text-decoration: none;
+}
+a:hover, a:focus{
+   color:$color__hover; 
+}

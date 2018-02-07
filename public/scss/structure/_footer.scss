@@ -1,0 +1,47 @@
+footer {
+    width: 100vw;
+
+}
+
+.footerContainer {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: $color__primary;
+    color: $color__secondary;
+    width: 100vw;
+
+}
+
+.brandName {
+    font-size: 1.8em;
+}
+ .appDescription{
+        font-size: .8em;
+        font-style: italic;
+    }
+.appInfo {
+    flex: 1 0 50%;
+    li {
+        list-style: none;
+    }
+
+}
+
+.socialMenu {
+    flex: 1 0 50%;
+    li {
+        list-style: none;
+    }
+}
+@media screen and (max-width: $screen-width__small) {
+.footerContainer{
+    flex-direction: column;
+}
+.socialMenu{
+    flex:1 0 2%;
+}
+.appInfo {
+     flex:1 0 2%;
+}}

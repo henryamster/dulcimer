@@ -29,24 +29,32 @@ header {
 .headerContainer {
   display: flex;
   background-color: #000;
-  color: #fff;
+  color: #DFF;
   padding-bottom: 20px; }
 
 .branding {
   display: flex;
   flex-direction: column;
-  padding-left: 120px; }
+  padding-left: 60px; }
 
 .logo {
   font-size: 6em;
   text-align: center; }
+
+svg {
+  padding-top: 20px;
+  height: 80px;
+  stroke: #000;
+  stroke-width: 2px;
+  fill: #776; }
 
 .appName {
   font-size: 2em; }
 
 #headerNav {
   display: flex;
-  width: 100%; }
+  width: 80%;
+  font-weight: 700; }
   #headerNav ul {
     width: 100%;
     font-family: "Quattrocento", Georgia, Cambria, "Times New Roman", serif;
@@ -71,27 +79,80 @@ header {
 
 @media screen and (max-width: 725px) {
   .headerContainer {
-    background: white;
-    color: black; }
+    background: #DFF;
+    color: #000;
+    flex-direction: column; }
   .branding {
-    padding-left: 15px; }
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
   #headerNav {
-    display: block; }
+    display: flex; }
     #headerNav ul {
+      padding-left: 50%;
       padding-top: 10px;
       flex-direction: column;
       justify-content: flex-start; }
       #headerNav ul li {
         flex: 0 1 4.2%;
-        font-size: 1.2em; } }
+        font-size: 1.2em; }
+  svg {
+    padding-top: 20px;
+    height: 80px;
+    stroke: #776;
+    stroke-width: 2px; } }
 
 .wrapper {
   flex: 1;
   max-width: 1080px;
   align-content: flex-end;
-  padding: 2em; }
+  padding: 2em;
+  min-height: 100vh; }
+
+footer {
+  width: 100vw; }
+
+.footerContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #000;
+  color: #DFF;
+  width: 100vw; }
+
+.brandName {
+  font-size: 1.8em; }
+
+.appDescription {
+  font-size: .8em;
+  font-style: italic; }
+
+.appInfo {
+  flex: 1 0 50%; }
+  .appInfo li {
+    list-style: none; }
+
+.socialMenu {
+  flex: 1 0 50%; }
+  .socialMenu li {
+    list-style: none; }
+
+@media screen and (max-width: 725px) {
+  .footerContainer {
+    flex-direction: column; }
+  .socialMenu {
+    flex: 1 0 2%; }
+  .appInfo {
+    flex: 1 0 2%; } }
 
 body {
   width: 100vw;
   margin: 0;
   padding: 0; }
+
+a {
+  color: #776;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #BBC; }

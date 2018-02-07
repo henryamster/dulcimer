@@ -4,8 +4,8 @@ header{
 .headerContainer {
 
     display: flex;
-     background-color: #000;
-    color:#fff;
+     background-color: $color__primary;;
+    color:$color__secondary;
     padding-bottom:20px;
 
 }
@@ -13,12 +13,19 @@ header{
 .branding {
     display: flex;
     flex-direction: column;
-    padding-left: 120px;
+    padding-left: 60px;
 }
 
 .logo {
     font-size: 6em;
     text-align: center;
+}
+svg{
+    padding-top:20px;
+    height:80px;
+    stroke:$color__primary;
+    stroke-width:2px;
+    fill:$color__interactive;
 }
 
 .appName {
@@ -29,7 +36,8 @@ header{
 #headerNav {
     display: flex;
    
-width: 100%;
+width: 80%;
+    font-weight: 700;
 
     ul {
         width: 100%;
@@ -65,19 +73,24 @@ width: 100%;
 
 @media screen and (max-width: $screen-width__small) {
     .headerContainer{
-        background:white;
-                color:black;
+        background:$color__secondary;
+                color:$color__primary;
+        flex-direction: column;
     }
     .branding{
         padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
     }
     #headerNav {
-        display:block;
+        display:flex;
         ul {
+            padding-left: 50%;
             
             padding-top:10px;;
             flex-direction: column;
             justify-content: flex-start;
+            
             li {
                 
                 flex: 0 1 4.2%;
@@ -85,4 +98,10 @@ width: 100%;
             }
         }
     }
+    svg{
+    padding-top:20px;
+    height:80px;
+    stroke:$color__interactive;
+    stroke-width:2px;
+}
 }
