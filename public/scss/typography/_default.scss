@@ -1,0 +1,30 @@
+//import font styles
+@import 'fonts';
+
+//DEFAULT STYLES FOR TEXT
+
+h1{
+    font-size:4em;
+     font-weight: $font-weight__bold;
+    
+}
+h2{
+    font-size:2em;
+    font-weight: $font-weight__thin;
+}
+h3{
+    font-size:1.5em;  
+}
+p{
+    font-size:1.2em;
+}
+
+p, li{ font-family: $font__bb;}
+h1,h2,h3,h4,h5,h6 {font-family: $font__aa;}
+
+li{
+    list-style:disc;
+    list-style-position:inside;
+     font-size:1.1em;
+}
+

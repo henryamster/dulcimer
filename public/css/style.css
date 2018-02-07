@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  text-align: right;
+  min-width: 100%; }
+
+.wrapper {
+  flex: 1;
+  max-width: 1080px;
+  align-content: flex-end;
+  padding: 4em; }
+
+h1 {
+  font-size: 4em;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.5em; }
+
+p {
+  font-size: 1.2em; }
+
+p, li {
+  font-family: "Cormorant Garamond", Helvetica, serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quattrocento", Georgia, Cambria, "Times New Roman", serif; }
+
+li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.1em; }

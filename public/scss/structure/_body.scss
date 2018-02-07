@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    text-align: right;
+    min-width: 100%;
+}
+.wrapper{
+    flex:1;
+    max-width: 1080px;
+    align-content:flex-end;
+    padding:4em;
+    
+}
