@@ -1,18 +1,52 @@
 
 <html lang="en">
 <head>
+<!--   Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+<!--    Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700" rel="stylesheet">
+<!--    Meta Charset and Viewport -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    React and React DOM-->
     <script src="https://fb.me/react-15.2.1.js"></script>
 <script src="https://fb.me/react-dom-15.2.1.js"></script>
+<!--  Babel-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+<!--   title-->
     <title>Dulcimer</title>
 </head>
-<body>
-<div id="react-container"></div>
 
+<body>
+
+
+<!--header -->
+<header>
+   <div class="headerContainer">
+        <div class="branding">
+            <div class="logo">
+                D
+            </div>
+            <div class="appName">
+                Dulcimer
+            </div>
+        </div> 
+        <nav id="headerNav">
+            <ul>
+                <li>Dashboard</li>
+                <li>Collections</li>
+                <li>Search</li>
+                <li>Items</li>
+                <li>New Item</li>
+                <li>Profile</li>
+            </ul>
+        </nav>
+   </div>
+    
+</header>
+<div class="wrapper">
+<div id="react-container" class="bodyContent"></div>
 <script type="text/babel">
 
 
@@ -38,7 +72,10 @@ class HeaderComponent extends React.Component{
 ReactDOM.render(<HeaderComponent name="henry"/>,
                document.getElementById('react-container'))
         
-
+    </script>
+    
+<!--
+    
 //    ReactDOM.render( 
 //       
 //               <div className="wrapper">
@@ -66,7 +103,8 @@ ReactDOM.render(<HeaderComponent name="henry"/>,
 //            
 //            
 //                    document.getElementById('react-container'))
-    </script>
+-->
+
 
 <!--comment>
      PRE        
@@ -79,6 +117,26 @@ ReactDOM.render(<HeaderComponent name="henry"/>,
             \}
             </code></pre>
 -->
-
+<footer>
+    <div class="footerContainer">
+        <div class="appInfo">
+            <ul>
+                <li>
+                    <h3>Dulcimer</h3>
+                </li>
+                <li>the App for collectors</li>
+                <li>&copy; 2018 Henry Fritz Design & Development</li>
+            </ul>
+        </div>
+        <div class="socialMenu">
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Github</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
 </body>
 </html>

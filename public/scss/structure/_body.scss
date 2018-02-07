@@ -1,12 +1,12 @@
-body{
-    display:flex;
-    text-align: right;
-    min-width: 100%;
-}
+//body{
+//    display:flex;
+//    text-align: right;
+//    min-width: 100%;
+//}
 .wrapper{
     flex:1;
-    max-width: 1080px;
+    max-width:  $screen-width__large;
     align-content:flex-end;
-    padding:4em;
+    padding:2em;
     
 }
