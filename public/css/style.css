@@ -126,15 +126,15 @@ svg {
 
 footer {
   width: 100vw;
-  border-top: 2px solid #F56; }
+  border-top: 2px solid #F56;
+  background-color: #DFF; }
 
 .footerContainer {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  background-color: #DFF;
   color: #F56;
-  width: 100vw; }
+  width: 90%; }
 
 .brandName {
   font-size: 1.8em;
@@ -146,12 +146,12 @@ footer {
   font-style: italic; }
 
 .appInfo {
-  flex: 1 0 50%; }
+  flex: 1 0 32%; }
   .appInfo li {
     list-style: none; }
 
 .socialMenu {
-  flex: 1 0 50%; }
+  flex: 1 0 36%; }
   .socialMenu li {
     list-style: none; }
 
@@ -163,8 +163,12 @@ footer {
   .appInfo {
     flex: 1 0 2%; } }
 
+html {
+  overflow-x: hidden; }
+
 body {
-  width: 100vw;
+  width: 90vw;
+  max-width: 100vw;
   margin: 0;
   padding: 0;
   background-color: #edd8d3; }
@@ -183,7 +187,7 @@ a:hover, a:focus {
   flex-direction: column;
   text-align: center;
   background-color: #DFF;
-  padding: 20px 0 20px;
+  padding: 20px;
   -webkit-border-radius: 22px;
   border-radius: 22px;
   background-clip: padding-box;
@@ -227,5 +231,15 @@ table {
   font-weight: 800; }
 
 @media screen and (max-width: 750px) {
+  .wrapper {
+    padding: 0; }
+  .item {
+    padding: 0;
+    width: 100vw;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
   tr {
     flex: 1 0 100%; } }

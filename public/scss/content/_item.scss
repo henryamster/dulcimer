@@ -5,7 +5,7 @@
     flex-direction: column;
     text-align: center;
     background-color:$color__primary;
-    padding:20px 0 20px;
+    padding:20px;
     @include border-radius(22px);
 }
 .item-image{
@@ -45,6 +45,15 @@ table{
     font-weight: 800;
 }
 @media screen and (max-width: $screen-width__small){
+    .wrapper{
+        padding:0;
+    }
+    .item{
+        padding:0;
+     width:100vw; 
+        border:0;
+        @include border-radius(0);
+    }
   tr{
       flex: 1 0 100%;  }
     

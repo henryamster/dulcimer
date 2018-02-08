@@ -1,6 +1,7 @@
 footer {
     width: 100vw;
  border-top:2px solid $color__secondary;
+    background-color: $color__primary;
 }
 
 .footerContainer {
@@ -8,9 +9,9 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    background-color: $color__primary;
+    
     color: $color__secondary;
-    width: 100vw;
+    width: 90%;
 
 }
 
@@ -24,7 +25,7 @@ footer {
         font-style: italic;
     }
 .appInfo {
-    flex: 1 0 50%;
+    flex: 1 0 32%;
     li {
         list-style: none;
     }
@@ -32,7 +33,7 @@ footer {
 }
 
 .socialMenu {
-    flex: 1 0 50%;
+    flex: 1 0 36%;
     li {
         list-style: none;
     }
