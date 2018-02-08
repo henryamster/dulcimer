@@ -111,12 +111,17 @@
             <ul>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Collections</a></li>
-                <li><a href="#">Search</a></li>
+               
                 <li><a href="#">Items</a></li>
-                <li><a href="#">New Item</a></li>
+                <li><a href="#">New&nbsp;Item</a></li>
                 <li><a href="#">Profile</a></li>
+                <li><span class="diamond">&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;</span>
+                </li>
+                
+                
             </ul>
         </nav>
+        
    </div>
     
 </header>
@@ -133,10 +138,16 @@ class ItemComponent extends React.Component{
                 }
                 {this.props.user&&
                 <span className="sharedBy">    
-                    shared by: <span className="item-userName"><a href="#">{this.props.user}</a></span>
+                    shared by: <br></br><span className="item-userName"><a href="#">{this.props.user}</a></span>
                 </span>
                 }
                 
+                {this.props.loggedIn&&
+                <span>
+                <button className="itemBtn">Edit</button>
+                    <button className=" itemBtn">Delete</button>
+    </span>
+                }
             {this.props.img &&
             <img src={this.props.img} alt="" className="item-image"/>
                 }
@@ -198,7 +209,7 @@ class ItemComponent extends React.Component{
         </div>
     }
 }
-ReactDOM.render(<ItemComponent itemName="Vintage Warren A May Dulcimer" img="/img/WAMD.jpg" itemDesc="Antique handcrafted Warren A May wooden dulcimer" date="1960?" procurement="Warren A May, Berea, Ky" fullDesc="Purchased by my grandma in the early 1960s, passed down through family" user="Henry"/>,
+ReactDOM.render(<ItemComponent itemName="Vintage Warren A May Dulcimer" img="/img/WAMD.jpg" itemDesc="Antique handcrafted Warren A May wooden dulcimer" date="1960?" procurement="Warren A May, Berea, Ky" fullDesc="Purchased by my grandma in the early 1960s, passed down through family" user="Henry" loggedIn="true"/>,
                document.getElementById('react-container'))
         
     </script>

@@ -40,27 +40,36 @@ svg{
 #headerNav {
     display: flex;
    
-width: 80%;
+width: 90%;
     font-weight: 700;
 
     ul {
         width: 100%;
         font-family: $font__aa;
-        padding-top: 40px;
-        padding-left:40px;
+           padding-top: 10px;
+    padding-left: 77px;
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
         flex-direction: row;
+        
 
         li {
-            flex: 1 1 14%;
+            flex: 1 1 4%;
+            text-align: center;
             display:flex;
             list-style: none;
             padding-right: 3px;
-            font-size: 1.4em;
+            font-size: 1.7em;
             a{
-                color:$color__secondary;
+               height:35px; color:$color__secondary;
+                
+                padding:6px;
+               
+                @include border-radius(16px);
+                &:hover{
+                     background:$color__interactive;
+                }
             }
         }
     }
@@ -73,7 +82,7 @@ width: 80%;
         ul {
             li {
                 flex: 0 1 14%;
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
         }
     }
@@ -102,12 +111,19 @@ width: 80%;
             
             li {
                 a{
+                     
+                
                     color:$color__interactive;
+                    &:hover{
+                   border:2px solid $color__interactive; background:$color__header;
+                        
+                }
                 }
 //                background-color: $color__primary;
 //                @include border-radius(22px);
-                flex: 0 1 5.2%;
+                flex: 0 1 6.2%;
                 font-size: 1.9em;
+                
             }
         }
     }

@@ -1,6 +1,7 @@
 .item{
-//    border:2px solid $color__secondary;
-    width:100%;
+    border:12px double $color__secondary;
+    font-family: $font__aa;
+    width:98%;
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -12,11 +13,13 @@
 //    border:1px solid $color__secondary;
     width:100%;
     height:auto;
+    padding-top:18px;
 }
 .item-name{
     font-weight: 800;
     color:$color__secondary;
-    padding:0 5px;
+    padding:0 12px;
+    margin-bottom:5px;
 }
 tbody{
     display:flex;
@@ -31,19 +34,34 @@ tr{
     justify-content: space-around;
 }
 table{
+    font-size:28px;
     color:$color__secondary;
     padding:20px;
     @include center-block();
+}
+.legend{
+    color:$color__interactive;
+    font-weight: 800;
+    font-size:.8em;
 }
 .sharedBy{
     color:$color__secondary;
     font-family: $font__bb;
     padding-bottom: 10px;
     font-weight: 100;
-    font-size:.8em;
+    font-size:1.8em;
+    font-style: italic;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:20%;
 }
 .item-userName{
     font-weight: 800;
+    font-size:1.2em;
+}
+.diamond{
+    text-align: center;
+    visibility: hidden;
 }
 @media screen and (max-width: $screen-width__small){
     .wrapper{
@@ -57,5 +75,34 @@ table{
     }
   tr{
       flex: 1 0 100%;  }
+    .diamond{
+    visibility: visible;
+}
+    .sharedBy{
+        padding:0;
+        flex-direction: column;
+    }  
+}
+.item-name{
+    padding:25px;
+    font-size:3.2em;
+    
+    
+}
+
+.itemBtn{
+    font-weight:700;
+    font-style: italic;
+    font-family: $font__bb;
+    color: $color__background;
+    background-color: $color__header;
+    border: 0;
+    font-size:2.2em;
+    @include border-radius(12px);
+  
+}
+.itemBtn:hover, .itemBtn:focus{
+    background-color:$color__interactive;
+    color:$color__secondary;
     
 }
