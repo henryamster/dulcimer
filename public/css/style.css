@@ -25,9 +25,8 @@ li {
 
 header {
   width: 100vw;
-  background-color: #DFF;
-  color: #F56;
-  border-bottom: 2px solid #F56; }
+  background-color: #d4e7e7;
+  color: #ffffff; }
 
 .headerContainer {
   max-width: 1080px;
@@ -48,9 +47,9 @@ header {
 svg {
   padding-top: 20px;
   height: 80px;
-  stroke: #DFF;
+  stroke: #070707;
   stroke-width: 2px;
-  fill: #6d554f; }
+  fill: #f9b89e; }
 
 .appName {
   font-size: 2em; }
@@ -74,6 +73,8 @@ svg {
       list-style: none;
       padding-right: 3px;
       font-size: 1.4em; }
+      #headerNav ul li a {
+        color: #ffffff; }
 
 @media screen and (max-width: 989px) {
   .branding {
@@ -84,8 +85,8 @@ svg {
 
 @media screen and (max-width: 750px) {
   .headerContainer {
-    background: #F56;
-    color: #DFF;
+    background: #ffffff;
+    color: #070707;
     flex-direction: column; }
   .branding {
     padding-left: 15px;
@@ -102,10 +103,12 @@ svg {
       #headerNav ul li {
         flex: 0 1 5.2%;
         font-size: 1.9em; }
+        #headerNav ul li a {
+          color: #f9b89e; }
   svg {
     padding-top: 20px;
     height: 120px;
-    stroke: #6d554f;
+    stroke: #f9b89e;
     stroke-width: 2px; } }
 
 .wrapper {
@@ -117,23 +120,22 @@ svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background: #edd8d3; }
+  background: #ea4772; }
 
 .legend {
-  color: #6d554f;
+  color: #f9b89e;
   font-weight: 800;
   font-size: .6em; }
 
 footer {
   width: 100vw;
-  border-top: 2px solid #F56;
-  background-color: #DFF; }
+  background-color: #d4e7e7; }
 
 .footerContainer {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  color: #F56;
+  color: #ffffff;
   width: 90%; }
 
 .brandName {
@@ -153,9 +155,14 @@ footer {
 .socialMenu {
   flex: 1 0 36%; }
   .socialMenu li {
-    list-style: none; }
+    list-style: none;
+    font-weight: 800; }
+    .socialMenu li a {
+      color: #ffffff; }
 
 @media screen and (max-width: 750px) {
+  ul {
+    padding-left: 5px; }
   .footerContainer {
     flex-direction: column; }
   .socialMenu {
@@ -171,36 +178,33 @@ body {
   max-width: 100vw;
   margin: 0;
   padding: 0;
-  background-color: #edd8d3; }
+  background-color: #ea4772; }
 
 a {
-  color: #6d554f;
+  color: #f9b89e;
   text-decoration: none; }
 
 a:hover, a:focus {
-  color: #BBC; }
+  color: #b8b82c; }
 
 .item {
-  border: 2px solid #F56;
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #DFF;
-  padding: 20px;
+  background-color: #d4e7e7;
   -webkit-border-radius: 22px;
   border-radius: 22px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
 .item-image {
-  border: 1px solid #F56;
   width: 100%;
   height: auto; }
 
 .item-name {
   font-weight: 800;
-  color: #F56;
+  color: #ffffff;
   padding: 0 5px; }
 
 tbody {
@@ -215,13 +219,14 @@ tr {
   justify-content: space-around; }
 
 table {
-  color: #F56;
+  color: #ffffff;
   padding: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 .sharedBy {
+  color: #ffffff;
   font-family: "Cormorant Garamond", Helvetica, serif;
   padding-bottom: 10px;
   font-weight: 100;
