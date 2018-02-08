@@ -24,18 +24,22 @@ li {
   font-size: 1.1em; }
 
 header {
-  width: 100vw; }
+  width: 100vw;
+  background-color: #DFF;
+  color: #F56;
+  border-bottom: 2px solid #F56; }
 
 .headerContainer {
+  max-width: 1080px;
   display: flex;
-  background-color: #000;
-  color: #DFF;
   padding-bottom: 20px; }
 
 .branding {
   display: flex;
   flex-direction: column;
-  padding-left: 60px; }
+  padding-left: 60px;
+  font-weight: 700;
+  font-family: "Quattrocento", Georgia, Cambria, "Times New Roman", serif; }
 
 .logo {
   font-size: 6em;
@@ -44,9 +48,9 @@ header {
 svg {
   padding-top: 20px;
   height: 80px;
-  stroke: #000;
+  stroke: #DFF;
   stroke-width: 2px;
-  fill: #776; }
+  fill: #6d554f; }
 
 .appName {
   font-size: 2em; }
@@ -59,6 +63,7 @@ svg {
     width: 100%;
     font-family: "Quattrocento", Georgia, Cambria, "Times New Roman", serif;
     padding-top: 40px;
+    padding-left: 40px;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
@@ -77,51 +82,64 @@ svg {
     flex: 0 1 14%;
     font-size: 1.2em; } }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 750px) {
   .headerContainer {
-    background: #DFF;
-    color: #000;
+    background: #F56;
+    color: #DFF;
     flex-direction: column; }
   .branding {
     padding-left: 15px;
     padding-right: 15px;
-    text-align: center; }
+    text-align: center;
+    font-size: 2em; }
   #headerNav {
     display: flex; }
     #headerNav ul {
-      padding-left: 50%;
+      padding-left: 40%;
       padding-top: 10px;
       flex-direction: column;
       justify-content: flex-start; }
       #headerNav ul li {
-        flex: 0 1 4.2%;
-        font-size: 1.2em; }
+        flex: 0 1 5.2%;
+        font-size: 1.9em; }
   svg {
     padding-top: 20px;
-    height: 80px;
-    stroke: #776;
+    height: 120px;
+    stroke: #6d554f;
     stroke-width: 2px; } }
 
 .wrapper {
   flex: 1;
   max-width: 1080px;
   align-content: flex-end;
-  padding: 2em;
-  min-height: 100vh; }
+  padding: 2em 1em;
+  min-height: 100vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #edd8d3; }
+
+.legend {
+  color: #6d554f;
+  font-weight: 800;
+  font-size: .6em; }
 
 footer {
-  width: 100vw; }
+  width: 100vw;
+  border-top: 2px solid #F56; }
 
 .footerContainer {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  background-color: #000;
-  color: #DFF;
+  background-color: #DFF;
+  color: #F56;
   width: 100vw; }
 
 .brandName {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  font-weight: 700;
+  font-family: "Quattrocento", Georgia, Cambria, "Times New Roman", serif; }
 
 .appDescription {
   font-size: .8em;
@@ -137,7 +155,7 @@ footer {
   .socialMenu li {
     list-style: none; }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 750px) {
   .footerContainer {
     flex-direction: column; }
   .socialMenu {
@@ -148,11 +166,66 @@ footer {
 body {
   width: 100vw;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #edd8d3; }
 
 a {
-  color: #776;
+  color: #6d554f;
   text-decoration: none; }
 
 a:hover, a:focus {
   color: #BBC; }
+
+.item {
+  border: 2px solid #F56;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #DFF;
+  padding: 20px 0 20px;
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.item-image {
+  border: 1px solid #F56;
+  width: 100%;
+  height: auto; }
+
+.item-name {
+  font-weight: 800;
+  color: #F56;
+  padding: 0 5px; }
+
+tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+tr {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+table {
+  color: #F56;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.sharedBy {
+  font-family: "Cormorant Garamond", Helvetica, serif;
+  padding-bottom: 10px;
+  font-weight: 100;
+  font-size: .8em; }
+
+.item-userName {
+  font-weight: 800; }
+
+@media screen and (max-width: 750px) {
+  tr {
+    flex: 1 0 100%; } }

@@ -7,7 +7,14 @@
     flex:1;
     max-width:  $screen-width__large;
     align-content:flex-end;
-    padding:2em;
+   padding:2em 1em;
     min-height:100vh;
+    @include center-block();
+    background: $color__background;
     
+}
+.legend{
+    color:$color__interactive;
+    font-weight: 800;
+    font-size:.6em;
 }

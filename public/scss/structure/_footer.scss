@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-
+ border-top:2px solid $color__secondary;
 }
 
 .footerContainer {
@@ -16,6 +16,8 @@ footer {
 
 .brandName {
     font-size: 1.8em;
+    font-weight: $font-weight__bold;
+    font-family: $font__aa;
 }
  .appDescription{
         font-size: .8em;

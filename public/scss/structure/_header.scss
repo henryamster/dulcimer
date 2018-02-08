@@ -1,11 +1,13 @@
 header{
     width:100vw;
+    background-color: $color__primary;;
+    color:$color__secondary;
+    border-bottom:2px solid $color__secondary;
 }
 .headerContainer {
-
+    max-width:$screen-width__large;
     display: flex;
-     background-color: $color__primary;;
-    color:$color__secondary;
+     
     padding-bottom:20px;
 
 }
@@ -14,6 +16,8 @@ header{
     display: flex;
     flex-direction: column;
     padding-left: 60px;
+    font-weight: $font-weight__bold;
+    font-family:$font__aa;
 }
 
 .logo {
@@ -43,6 +47,7 @@ width: 80%;
         width: 100%;
         font-family: $font__aa;
         padding-top: 40px;
+        padding-left:40px;
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
@@ -81,26 +86,28 @@ width: 80%;
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
+        font-size:2em;
     }
     #headerNav {
         display:flex;
         ul {
-            padding-left: 50%;
+            padding-left: 40%;
             
             padding-top:10px;;
             flex-direction: column;
             justify-content: flex-start;
             
             li {
-                
-                flex: 0 1 4.2%;
-                font-size: 1.2em;
+//                background-color: $color__primary;
+//                @include border-radius(22px);
+                flex: 0 1 5.2%;
+                font-size: 1.9em;
             }
         }
     }
     svg{
     padding-top:20px;
-    height:80px;
+    height:120px;
     stroke:$color__interactive;
     stroke-width:2px;
 }

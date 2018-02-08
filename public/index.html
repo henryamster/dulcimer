@@ -125,73 +125,85 @@
 <script type="text/babel">
 
 
-class HeaderComponent extends React.Component{
+class ItemComponent extends React.Component{
     render(){
-        return <div className="header">
-            <h1>Dulcimer</h1>
-            <ul>
-                <li>
-                    {this.props.name}'s Account
-                </li>
-                <li>
-                    My Stuff
-                </li>
-                <li>  
-                 My Collections 
-                </li>
-           
-            </ul>
+        return <div className="item">
+           {this.props.itemName &&
+            <h2 className="item-name">{this.props.itemName}</h2>
+                }
+                {this.props.user&&
+                <span className="sharedBy">    
+                    shared by: <span className="item-userName"><a href="#">{this.props.user}</a></span>
+                </span>
+                }
+                
+            {this.props.img &&
+            <img src={this.props.img} alt="" className="item-image"/>
+                }
+            <table className="informationTable"><tbody>
+                    {this.props.itemDesc &&
+                  <tr>
+                      <td className="legend">
+                          Item Description:
+                      </td>
+                      <td>
+                          {this.props.itemDesc}
+                      </td>
+                  </tr> 
+                    }
+                    {this.props.date &&
+                  <tr>
+                      <td className="legend">
+                          Date:
+                      </td>
+                      <td>
+                          {this.props.date}
+                      </td>
+                  </tr>  
+                    }
+                  {this.props.series &&
+                     <tr>
+                      <td className="legend">
+                          Item Series:
+                      </td>
+                      <td>
+                          { this.props.series}
+                      </td>
+                  </tr>  
+                    }
+                    {this.props.procurement &&
+                  <tr>
+                      <td className="legend">
+                          Procured From:
+                      </td>
+                      <td>
+                          {this.props.procurement}
+                      </td>
+                  </tr> 
+                    }
+                    {this.props.fullDesc &&
+                  <tr>
+                      <td className="legend">
+                          Long Description:
+                      </td>
+                      <td>
+                          {this.props.fullDesc}
+                      </td>
+                  </tr>
+                    }
+                  </tbody> 
+                </table>
+            
+            
         </div>
     }
 }
-ReactDOM.render(<HeaderComponent name="henry"/>,
+ReactDOM.render(<ItemComponent itemName="Vintage Warren A May Dulcimer" img="/img/WAMD.jpg" itemDesc="Antique handcrafted Warren A May wooden dulcimer" date="1960?" procurement="Warren A May, Berea, Ky" fullDesc="Purchased by my grandma in the early 1960s, passed down through family" user="Henry"/>,
                document.getElementById('react-container'))
         
     </script>
     
-<!--
-    
-//    ReactDOM.render( 
-//       
-//               <div className="wrapper">
-//               <h1>HTML Ipsum Presents</h1>
-//            
-//            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-//            
-//            <h2>Header Level 2</h2>
-//            
-//            <ol>
-//               <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-//               <li>Aliquam tincidunt mauris eu risus.</li>
-//            </ol>
-//            
-//            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-//            
-//            <h3>Header Level 3</h3>
-//            
-//            <ul>
-//               <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-//               <li>Aliquam tincidunt mauris eu risus.</li>
-//            </ul>
-//   
-//        </div>,
-//            
-//            
-//                    document.getElementById('react-container'))
--->
 
-
-<!--comment>
-     PRE        
-<!--
-            <pre><code>
-            #header h1 a \{
-              display\: block;
-              width: 300px;
-              height: 80px;
-            \}
-            </code></pre>
--->
 
 </div>
 <footer>
