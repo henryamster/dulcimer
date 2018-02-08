@@ -142,15 +142,17 @@ class ItemComponent extends React.Component{
                 </span>
                 }
                 
+                
+            {this.props.img &&
+            <img src={this.props.img} alt="" className="item-image"/>
+                }
                 {this.props.loggedIn&&
-                <span>
+                <span className="modifyBtn">
                 <button className="itemBtn">Edit</button>
                     <button className=" itemBtn">Delete</button>
     </span>
                 }
-            {this.props.img &&
-            <img src={this.props.img} alt="" className="item-image"/>
-                }
+                
             <table className="informationTable"><tbody>
                     {this.props.itemDesc &&
                   <tr>
@@ -209,7 +211,7 @@ class ItemComponent extends React.Component{
         </div>
     }
 }
-ReactDOM.render(<ItemComponent itemName="Vintage Warren A May Dulcimer" img="/img/WAMD.jpg" itemDesc="Antique handcrafted Warren A May wooden dulcimer" date="1960?" procurement="Warren A May, Berea, Ky" fullDesc="Purchased by my grandma in the early 1960s, passed down through family" user="Henry" loggedIn="true"/>,
+ReactDOM.render(<ItemComponent itemName="Vintage Warren A May Dulcimer" img="/img/WAMD.jpg" itemDesc="Antique handcrafted Warren A May wooden dulcimer" date="1960?" procurement="Warren A May, Berea, Ky" fullDesc="Purchased by my grandma in the early 1960s, passed down through family" user="Henry" series="bird-engraving" loggedIn="true"/>,
                document.getElementById('react-container'))
         
     </script>

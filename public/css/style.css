@@ -25,7 +25,7 @@ li {
 
 header {
   width: 100vw;
-  background-color: #e2eaed;
+  background-color: #43466B;
   color: #ffffff; }
 
 .headerContainer {
@@ -116,7 +116,7 @@ svg {
           color: #f9b89e; }
           #headerNav ul li a:hover {
             border: 2px solid #f9b89e;
-            background: #e2eaed; }
+            background: #43466B; }
   svg {
     padding-top: 20px;
     height: 120px;
@@ -142,7 +142,7 @@ svg {
 footer {
   width: 100vw;
   border-top: 2px solid #ffffff;
-  background-color: #e2eaed;
+  background-color: #43466B;
   font-size: 24px; }
 
 .footerContainer {
@@ -208,7 +208,7 @@ a:hover, a:focus {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #e2eaed;
+  background-color: #43466B;
   -webkit-border-radius: 22px;
   border-radius: 22px;
   background-clip: padding-box;
@@ -217,7 +217,9 @@ a:hover, a:focus {
 .item-image {
   width: 100%;
   height: auto;
-  padding-top: 18px; }
+  margin-top: 18px;
+  border-bottom: 12px solid #f9b89e;
+  border-top: 12px solid #f9b89e; }
 
 .item-name {
   font-weight: 800;
@@ -254,7 +256,7 @@ table {
   font-family: "Cormorant Garamond", Helvetica, serif;
   padding-bottom: 10px;
   font-weight: 100;
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-style: italic;
   display: flex;
   justify-content: flex-end;
@@ -288,21 +290,27 @@ table {
     flex-direction: column; } }
 
 .item-name {
-  padding: 25px;
+  padding: 25px 25px 25px 0;
   font-size: 3.2em; }
+
+.modifyBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px; }
 
 .itemBtn {
   font-weight: 700;
   font-style: italic;
   font-family: "Cormorant Garamond", Helvetica, serif;
   color: #f9efe6;
-  background-color: #e2eaed;
+  background-color: #43466B;
   border: 0;
-  font-size: 2.2em;
+  font-size: 1.2em;
   -webkit-border-radius: 12px;
   border-radius: 12px;
   background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */ }
+  /* stops bg color from leaking outside the border: */
+  margin-top: 12px; }
 
 .itemBtn:hover, .itemBtn:focus {
   background-color: #f9b89e;
